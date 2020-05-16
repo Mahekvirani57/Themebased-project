@@ -1,0 +1,613 @@
+{% load static %}
+{% static "images" as baseUrl %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>E-learning</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="{% static 'css/elegant-fonts.css' %}">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="{% static 'css/swiper.min.css' %}">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="hero-content">
+        <header class="site-header">
+            <div class="top-header-bar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                            <div class="header-bar-email d-flex align-items-center">
+                                <i class="fa fa-envelope"></i><a href="#">mahek.m.virani@gmail.com</a>
+								 <i class="fa fa-envelope"></i><a href="#">vikasdeshmukh25@gmail.com</a>
+                            </div><!-- .header-bar-email -->
+
+                            <div class="header-bar-text lg-flex align-items-center">
+                                <p><i class="fa fa-phone"></i>8309191016 </p>
+                            </div><!-- .header-bar-text -->
+                        </div><!-- .col -->
+
+                        <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                            <div class="header-bar-search">
+                                <form class="flex align-items-stretch">
+                                  
+                                </form>
+                            </div><!-- .header-bar-search -->
+
+                            <div class="header-bar-menu">
+                                <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
+									{% if user.is_authenticated %}
+									<li>Hello,{{user.first_name}}</li>
+									  <li><a href="accounts/logout">Logout</a></li>
+									{% else %}
+									 <li><a href="accounts/register">Register</a></li>
+                                    <li><a href="accounts/login">Login</a></li>
+									{% endif %}
+                                </ul>
+                            </div><!-- .header-bar-menu -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container-fluid -->
+            </div><!-- .top-header-bar -->
+
+            <div class="nav-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9 col-lg-3">
+                            <div class="site-branding">
+                                <h1 class="site-title"><a href="index.html" rel="home">E-Learning<span></span></a></h1>
+                            </div><!-- .site-branding -->
+                        </div><!-- .col -->
+
+                        <div class="col-3 col-lg-9 flex justify-content-end align-content-center">
+                            <nav class="site-navigation flex justify-content-end align-items-center">
+                                <ul class="flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                    <li class="current-menu-item"><a href="accounts/home">Home</a></li>
+                                    <li><a href="accounts/about">About</a></li>
+                                    
+                                    
+                                    <li><a href="accounts/contact">Contact</a></li>
+                                </ul>
+
+                                <div class="hamburger-menu d-lg-none">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div><!-- .hamburger-menu -->
+
+                                
+                            </nav><!-- .site-navigation -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .nav-bar -->
+        </header><!-- .site-header -->
+
+        <div class="hero-content-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="hero-content-wrap flex flex-column justify-content-center align-items-start">
+                            <header class="entry-header">
+                                <h4>Get started with online courses</h4>
+                                <h1>best online<br/>Learning system</h1>
+                            </header><!-- .entry-header -->
+
+                            <div class="entry-content">
+                                <p>Instructional designers need to run , not to walk, away from classroom-based thinking and get to the point of providing short quick business-focused learning points that are easily accessible when and where our learners need them . This means leveraging new technologies to deliver non-traditional instruction</p>
+                            </div><!-- .entry-content -->
+
+                            <footer class="entry-footer read-more">
+                                <a href="accounts/about">read more</a>
+                            </footer><!-- .entry-footer -->
+                        </div><!-- .hero-content-wrap -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .hero-content-hero-content-overlay -->
+    </div><!-- .hero-content -->
+
+    <div class="icon-boxes">
+        <div class="container-fluid">
+            <div class="flex flex-wrap align-items-stretch">
+                <div class="icon-box">
+                    <div class="icon">
+                        <span class="ti-user"></span>
+                    </div><!-- .icon -->
+
+                    <header class="entry-header">
+                        <h2 class="entry-title">Learn From The Experts</h2>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <p></p>
+                    </div><!-- .entry-content -->
+
+                    <footer class="entry-footer read-more">
+                        <a href="accounts/about">read more<i class="fa fa-long-arrow-right"></i></a>
+                    </footer><!-- .entry-footer -->
+                </div><!-- .icon-box -->
+
+               
+
+            
+                
+            </div><!-- .row -->
+        </div><!-- .container-fluid -->
+    </div><!-- .icon-boxes -->
+
+	
+
+    <section class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 align-content-lg-stretch">
+                    <header class="heading">
+						<h2 class="entry-title">About Eventify</h2>
+
+                        <p>Eventify is the best online platform for the students who wants to become an entrepreneur and want to be perfect in each and every areas that a person should be in order to become a sucessful entrepreneur</p>
+                    </header><!-- .heading -->
+
+                    <div class="entry-content ezuca-stats">
+                        <div class="stats-wrap flex flex-wrap justify-content-lg-between">
+                            <div class="stats-count">
+                                50<span>M+</span>
+                                <p>STUDENTS LEARNING</p>
+                            </div><!-- .stats-count -->
+
+                            <div class="stats-count">
+                                30<span>K+</span>
+                                <p>ACTIVE COURSES</p>
+                            </div><!-- .stats-count -->
+
+                            <div class="stats-count">
+                                340<span>M+</span>
+                                <p>INSTRUCTORS ONLINE</p>
+                            </div><!-- .stats-count -->
+
+                            <div class="stats-count">
+                                20<span>+</span>
+                                <p>Country Reached</p>
+                            </div><!-- .stats-count -->
+                        </div><!-- .stats-wrap -->
+                    </div><!-- .ezuca-stats -->
+                </div><!-- .col -->
+
+                <div class="col-12 col-lg-6 flex align-content-center mt-5 mt-lg-0">
+                    <div class="ezuca-video position-relative">
+                        <div class="video-play-btn position-absolute">
+                            
+                        </div><!-- .video-play-btn -->
+
+                       
+						<iframe width="500"  height="290"src="https://www.youtube-nocookie.com/embed/nzV1NmhC7ik?modestbranding=1&amp;rel=0&amp;autohide=1&showinfo=0;controls=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div><!-- .ezuca-video -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </section><!-- .about-section -->
+
+    <section class="testimonial-section">
+        <!-- Swiper -->
+        <div class="swiper-container testimonial-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="container">
+                        <div class="row">
+                            
+
+                            
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .swiper-slide -->
+
+                <div class="swiper-slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 order-2 order-lg-1 flex align-items-center mt-5 mt-lg-0">
+                                <figure class="user-avatar">
+                                    <img src="{% static 'images/user-2.jpg' %}" alt="">
+                                </figure><!-- .user-avatar -->
+                            </div><!-- .col -->
+
+                            <div class="col-12 col-lg-6 order-1 order-lg-2 content-wrap h-100">
+                                <div class="entry-content">
+                                    <p>Instructional designers need to run , not to walk, away from classroom-based thinking and get to the point of providing short quick business-focused learning points that are easily accessible when and where our learners need them . This means leveraging new technologies to deliver non-traditional  </p>
+                                </div><!-- .entry-content -->
+
+                                <div class="entry-footer">
+                                    <h3 class="testimonial-user">Robert Stephens - <span>University in Oxford</span></h3>
+                                </div><!-- .entry-footer -->
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .swiper-slide -->
+
+                <div class="swiper-slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 flex order-2 order-lg-1 align-items-center mt-5 mt-lg-0">
+                                <figure class="user-avatar">
+                                    <img src="{% static 'images/user-3.jpg' %}" alt="">
+                                </figure><!-- .user-avatar -->
+                            </div><!-- .col -->
+
+                            <div class="col-12 col-lg-6 order-1 order-lg-2 content-wrap h-100">
+                                <div class="entry-content">
+                                    <p>“It’s time to step up to the plate and get passionate about your work commit to making eLearning courses that don't bore people to tears, but instead inspire and motivate them to learn a new skill, change a certain behavior, or improve their performance.”.</p>
+                                </div><!-- .entry-content -->
+
+                                <div class="entry-footer">
+                                    <h3 class="testimonial-user">James Stephens - <span>University in Cambridge</span></h3>
+                                </div><!-- .entry-footer -->
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .swiper-slide -->
+            </div><!-- .swiper-wrapper -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+                        <div class="swiper-pagination position-relative flex justify-content-center align-items-center"></div>
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .testimonial-slider -->
+    </section><!-- .testimonial-section -->
+
+    <section class="featured-courses vertical-column courses-wrap">
+        <div class="container">
+            <div class="row mx-m-25">
+                <div class="col-12 px-25">
+                    <header class="heading flex flex-wrap justify-content-between align-items-center">
+                        <h2 class="entry-title">Featured Courses</h2>
+
+                        <nav class="courses-menu mt-3 mt-lg-0">
+                            <ul class="flex flex-wrap justify-content-md-end align-items-center">
+                              
+                            </ul>
+                        </nav><!-- .courses-menu -->
+                    </header><!-- .heading -->
+                </div><!-- .col -->
+				{% for dest in dests %}
+                <div class="col-12 col-md-6 col-lg-4 px-25">
+                    <div class="course-content">
+						
+                        <figure class="course-thumbnail">
+                            <a href="{{dest.ref}}"><img src="{{dest.img.url}}" alt=""></a>
+							{% if dest.offer %}
+							<div class="spec offer text-center"><a href="#">Special offer</a></div>
+							{% endif %}
+                        </figure><!-- .course-thumbnail -->
+
+                        <div class="course-content-wrap">
+                            <header class="entry-header">
+                                <h2 class="entry-title"><a href="finance.html">{{dest.name}}</a></h2>
+							
+
+                                <div class="entry-meta flex align-items-center">
+                                    <div class="course-author"><a href="#">{{dest.author}}</a></div>
+
+                                    <div class="course-date">April 30,2020</div>
+                                </div><!-- .course-date -->
+                            </header><!-- .entry-header -->
+
+                            <footer class="entry-footer flex justify-content-between align-items-center">
+                                <div class="course-cost">free <span class="price-drop"></span>
+                                </div><!-- .course-cost -->
+
+                                <div class="course-ratings flex justify-content-end align-items-center">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-o"></span>
+
+                                    <span class="course-ratings-count">(4 votes)</span>
+                                </div><!-- .course-ratings -->
+                            </footer><!-- .entry-footer -->
+                        </div><!-- .course-content-wrap -->
+                    </div><!-- .course-content -->
+                </div><!-- .col -->
+				{% endfor %}
+
+               
+
+                <div class="col-12 px-25 flex justify-content-center">
+                    
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </section><!-- .courses-wrap -->
+
+    <section class="latest-news-events">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <header class="heading flex justify-content-between align-items-center">
+                        <h2 class="entry-title">Latest News & Events</h2>
+                    </header><!-- .heading -->
+                </div><!-- .col -->
+
+                <div class="col-12 col-lg-6">
+                    <div class="featured-event-content">
+                        <figure class="event-thumbnail position-relative m-0">
+                            <a ><img src="{% static 'images/event-1.jpg' %}" alt=""></a>
+
+                            <div class="posted-date position-absolute">
+                                <div class="day">23</div>
+                                <div class="month">mar</div>
+                            </div><!-- .posted-date -->
+                        </figure><!-- .event-thumbnail -->
+
+                        <header class="entry-header flex flex-wrap align-items-center">
+                            <h2 class="entry-title"><a href="http://indiafa.org/event/india-finance-conference-2019/">The Complete Financial Analyst Training & Investing Course</a></h2>
+
+                            <div class="event-location"><i class="fa fa-map-marker"></i>Novotel,Gachibowli,Hyderabad</div>
+
+                            <div class="event-duration"><i class="fa fa-calendar"></i>13 NOV 15 NOV</div>
+                        </header><!-- .entry-header -->
+                    </div><!-- .featured-event-content -->
+                </div><!-- .col -->
+
+                <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+                    <div class="event-content flex flex-wrap justify-content-between align-content-stretch">
+                        <figure class="event-thumbnail">
+                            <a ><img src="{% static 'images/event-2.jpg' %}" alt=""></a>
+                        </figure><!-- .course-thumbnail -->
+
+                        <div class="event-content-wrap">
+                            <header class="entry-header">
+                                <div class="posted-date">
+                                    <i class="fa fa-calendar"></i> 22 Mar 2018
+                                </div><!-- .posted-date -->
+
+                                <h2 class="entry-title"><a href="https://icssr.org/seminarsconferencesworkshops-india">Personalized online learning experience</a></h2>
+
+                                <div class="entry-meta flex flex-wrap align-items-center">
+                                    <div class="post-author"><a>Mr Kashyap</a></div>
+
+                                    
+                                </div><!-- .entry-meta -->
+                            </header><!-- .entry-header -->
+
+                            <div class="entry-content">
+                                <p>People expect to be bored by eLearning—let’s show them it doesn’t have to be like that!.</p>
+                            </div><!-- .entry-content -->
+                        </div><!-- .event-content-wrap -->
+                    </div><!-- .event-content -->
+
+                    <div class="event-content flex flex-wrap justify-content-between align-content-lg-stretch">
+                        <figure class="event-thumbnail">
+                            <a href=""><img src="{% static 'images/event-3.jpg' %}" alt=""></a>
+                        </figure><!-- .course-thumbnail -->
+
+                        <div class="event-content-wrap">
+                            <header class="entry-header">
+                                <div class="posted-date">
+                                    <i class="fa fa-calendar"></i> 22 Mar 2018
+                                </div><!-- .posted-date -->
+
+                                <h2 class="entry-title"><a href="http://www.bsebti.com/">Which investment project should my company choose?</a></h2>
+
+                                <div class="entry-meta flex flex-wrap align-items-center">
+                                    <div class="post-author"><a>MR Anurag Sharma </a></div>
+
+                                  
+                                </div><!-- .entry-meta -->
+                            </header><!-- .entry-header -->
+
+                            <div class="entry-content">
+                                <p>People often tout interactivity as the great benefit offered by eLearning, yet most interactivity does nothing to either engage or instruct</p>
+                            </div><!-- .entry-content -->
+                        </div><!-- .event-content-wrap -->
+                    </div><!-- .event-content -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </section><!-- .latest-news-events -->
+
+    <section class="home-gallery">
+        <div class="gallery-wrap flex flex-wrap">
+            <div class="gallery-grid gallery-grid1x1">
+                <a href="#"><img src="{% static 'images/a.jpg' %}" alt=""></a>
+            </div><!-- .gallery-grid -->
+
+            <div class="gallery-grid gallery-grid1x1">
+                <a href="#"><img src="{% static 'images/b.jpg' %}" alt=""></a>
+            </div><!-- .gallery-grid -->
+
+            <div class="gallery-grid gallery-grid2x2">
+                <a href="#"><img src="{% static 'images/c.jpg' %}" alt=""></a>
+            </div><!-- .gallery-grid -->
+
+            <div class="gallery-grid gallery-grid1x1">
+                <a href="#"><img src="{% static 'images/d.jp' %}g" alt=""></a>
+            </div><!-- .gallery-grid -->
+
+            <div class="gallery-grid gallery-grid1x1">
+                <a href="#"><img src="{% static 'images/e.jpg' %}" alt=""></a>
+            </div><!-- .gallery-grid -->
+
+            <div class="gallery-grid gallery-grid2x1">
+                <a href="#"><img src="{% static 'images/g.jpg' %}" alt=""></a>
+            </div><!-- .gallery-grid -->
+
+            <div class="gallery-grid gallery-grid2x1">
+                <a href="#"><img src="{% static 'images/h.jpg' %}" alt=""></a>
+            </div><!-- .gallery-grid -->
+
+            <div class="gallery-grid gallery-grid1x1">
+                <a href="#"><img src="{% static 'images/i.jpg' %}" alt=""></a>
+            </div><!-- .gallery-grid -->
+
+            <div class="gallery-grid gallery-grid2x2 ">
+                <a href="#"><img src="{% static 'images/j.jpg' %}" alt=""></a>
+            </div><!-- .gallery-grid -->
+
+            <div class="gallery-grid gallery-grid1x1">
+                <a href="#"><img src="{% static 'images/k.jpg' %}" alt=""></a>
+            </div><!-- .gallery-grid -->
+
+            <div class="gallery-grid gallery-grid1x1">
+                <a href="#"><img src="{% static 'images/l.jpg' %}" alt=""></a>
+            </div><!-- .gallery-grid -->
+
+            <div class="gallery-grid gallery-grid2x1">
+                <a href="#"><img src="{% static 'images/m.jpg' %}" alt=""></a>
+            </div><!-- .gallery-grid -->
+
+            <div class="gallery-grid gallery-grid3x1">
+                <a href="#"><img src="{% static 'images/n.jpg' %}" alt=""></a>
+            </div><!-- .gallery-grid -->
+
+            <div class="gallery-grid gallery-grid1x1">
+                <a href="#"><img src="{% static 'images/o.jpg' %}" alt=""></a>
+            </div><!-- .gallery-grid -->
+        </div><!-- .gallery-wrap -->
+    </section><!-- .home-gallery -->
+
+    <div class="clients-logo">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 flex flex-wrap justify-content-center justify-content-lg-between align-items-center">
+                    <div class="logo-wrap">
+                        <img src="{% static 'images/logo-1.png' %}" alt="">
+                    </div><!-- .logo-wrap -->
+
+                    <div class="logo-wrap">
+                        <img src="{% static 'images/logo-2.png' %}" alt="">
+                    </div><!-- .logo-wrap -->
+
+                    <div class="logo-wrap">
+                        <img src="{% static 'images/logo-3.png' %}" alt="">
+                    </div><!-- .logo-wrap -->
+
+                    <div class="logo-wrap">
+                        <img src="{% static 'images/logo-4.png' %}" alt="">
+                    </div><!-- .logo-wrap -->
+
+                    <div class="logo-wrap">
+                        <img src="{% static 'images/logo-5.png' %}" alt="">
+                    </div><!-- .logo-wrap -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .clients-logo -->
+
+    <footer class="site-footer">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+						<h2 class="w-100">E-learning</h2>
+
+                            <p> “Students do not learn much just sitting in classes listening to teachers, memorizing prepackaged assignments, and spitting out answers. They must talk about what they are learning, write reflectively about it, relate it to past experiences, and apply it to their daily lives. They must make what they learn part of themselves.” – Arthur W. Chickering and Stephen C. Ehrmann</p>
+
+                            <p class="footer-copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">E-learning</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        </div><!-- .foot-about -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <div class="foot-contact">
+                            <h2>Contact Us</h2>
+
+                            <ul>
+                                <li>Email: elearning133@gmail.com</li>
+                                <li>Phone: 8309191016</li>
+                                <li>Address: vasavi college of engineering</li>
+                            </ul>
+                        </div><!-- .foot-contact -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
+                        <div class="quick-links flex flex-wrap">
+                            <h2 class="w-100">Quick Links</h2>
+
+                            <ul class="w-50">
+                                <li><a href="#">About </a></li>
+                                <li><a href="#">Terms of Use </a></li>
+                                <li><a href="#">Privacy Policy </a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+
+                            <ul class="w-50">
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">Forums</a></li>
+                                <li><a href="#">Language Packs</a></li>
+                                <li><a href="#">Release Status</a></li>
+                            </ul>
+                        </div><!-- .quick-links -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
+                        <div class="follow-us">
+                            <h2>Follow Us</h2>
+
+                            <ul class="follow-us flex flex-wrap align-items-center">
+                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div><!-- .quick-links -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-widgets -->
+
+        <div class="footer-bar">
+            <div class="container">
+                <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-center">
+                    <div class="col-12 col-lg-6">
+                        <div class="download-apps flex flex-wrap justify-content-center justify-content-lg-start align-items-center">
+                            <a href="#"><img src="{% static 'images/app-store.png' %}" alt=""></a>
+                            <a href="#"><img src="{% static 'images/play-store.png' %}" alt=""></a>
+                        </div><!-- .download-apps -->
+
+                    </div>
+
+                    <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+                        <div class="footer-bar-nav">
+                            <ul class="flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                                <li><a href="#">DPA</a></li>
+                                <li><a href="#">Terms of Use</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div><!-- .footer-bar-nav -->
+                    </div><!-- .col-12 -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-bar -->
+    </footer><!-- .site-footer -->
+
+<script type='text/javascript' src="{% static 'js/jquery.js' %}"></script>
+<script type='text/javascript' src="{% static 'js/swiper.min.js' %}"></script>
+<script type='text/javascript' src="{% static 'js/masonry.pkgd.min.js' %}"></script>
+<script type='text/javascript' src="{% static 'js/jquery.collapsible.min.js' %}"></script>
+<script type='text/javascript' src="{% static 'js/custom.js' %}"></script>
+
+</body>
+</html>

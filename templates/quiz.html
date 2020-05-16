@@ -1,0 +1,46 @@
+<body>
+  <style>
+    .mystyle {
+      display: none;
+		
+    }
+	  body{
+		  background-color: ghostwhite;
+		  font-style: oblique;
+	  }
+  </style>
+	<h2>Welcome to Quiz</h2>
+  {% for dest in dests %}
+  <h3>{{dest.question}}</h3>
+	
+  <input id="opt1" type="radio" name="{{dest.pk}}opt" value="1" />
+  <label for="opt1">{{dest.option1}}</label>
+  <br>
+  <input id="opt1" type="radio" name="{{dest.pk}}opt" value="2" />
+  <label for="opt2">{{dest.option2}}</label>
+  <br>
+  <input id="opt1" type="radio" name="{{dest.pk}}opt" value="3" />
+  <label for="opt3">{{dest.option3}}</label>
+  <br>
+  <input id="opt1" type="radio" name="{{dest.pk}}opt" value="4" />
+  <label for="opt4">{{dest.option4}}</label>
+  <br />
+  <br />
+  <div class="result mystyle">option {{dest.correct}}</div>
+  {% endfor %}
+  <br />
+  <button type="button" onclick="displayRadioValue()">
+    Submit
+  </button>
+
+  <br />
+  <script>
+    function displayRadioValue() {
+      var res = document.getElementsByClassName("result");
+      for(i=0;i<res.length;i++)
+      {
+        res[i].classList.toggle("mystyle");
+      }
+    }
+  </script>
+</body>
